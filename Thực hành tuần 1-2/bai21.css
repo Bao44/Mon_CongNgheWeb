@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.div_head{
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    display: inline-block;
+    font-family: monospace;
+}
+#h22{
+    color: forestgreen;
+}
+#div_head_p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu{
+    margin-top: 10px;
+    background-color: gray;
+    height: 46px;
+}
+#menu_nav li{
+    display: inline-block;
+}
+#menu_nav li a{
+    color: aliceblue;
+    /* Bỏ gạch dưới của thẻ a */
+    text-decoration: none;   
+     /*Căn nằm giữa  */
+    line-height: 46px;
+    /* Khoảng cách giữa các thẻ a */
+    padding: 0 40px;
+    display: inline-block;
+}
+#menu_nav li:hover a{
+    background-color: forestgreen;
+}
+
+#menu_nav .menu_subnav_1{
+    display: none;
+}
+#menu_nav .menu_subnav_2{
+    display: none;
+}
+#menu_nav .menu_subnav_3{
+    display: none;
+}
+
+#tag{
+    display: inline-block;
+    width: 15%;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tag_id{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    margin-left: 20px;
+}
+#tag li a{
+    color: black;
+    /* Bỏ gạch dưới của thẻ a */
+    text-decoration: none;   
+     /*Căn nằm giữa  */
+    line-height: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+#tag li:hover a{
+    background-color: rgb(46, 212, 137);
+}
+#center{
+    font-family: Arial, Helvetica, sans-serif;
+}
+

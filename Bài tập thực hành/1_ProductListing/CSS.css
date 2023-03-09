@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main{
     width: 1440px;
-    text-align: center;
+    margin-left: 45px;
 }
 
 #header{
@@ -21,7 +22,6 @@
    display: flex;
    justify-content: space-around;
    width: 25%;
-   font-family: Arial, Helvetica, sans-serif;
    color: gray;
 }
 
@@ -41,7 +41,6 @@
 }
 
 #title{
-    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     text-align: left;
     margin-left: 130px;
@@ -93,45 +92,91 @@
 #container{
     display: flex;
     justify-content: space-around;
-    height: 1150px;
-    text-align: center;
-    position: relative;
-    display: flex;
 }
 
 .hang1, .hang2, .hang3{
     display: flex;
-    text-align: left;
-    margin-right: 10px;
 }
-.hang1 #hang1_div{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-.hang1 #hang1_div #div1{
-    display: flex;
-    justify-content: left;
-}
-
-
-.hang2 #hang1_div{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-.hang2 #hang1_div #div1{
-    display: flex;
-    justify-content: left;
-}
-
+.hang1 #hang1_div,
+.hang2 #hang1_div,
 .hang3 #hang1_div{
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
+.hang1 #hang1_div #div1,
+.hang2 #hang1_div #div1,
 .hang3 #hang1_div #div1{
     display: flex;
     justify-content: left;
 }
+#img1{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#page{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page a{    
+    color: black;
+    margin:20px;
+    text-decoration: none;
+    line-height: 35px;
+    /* Căn cho độ rộng của hover */
+    padding: 0 10px;
+    /* Căn chỉnh độ rộng cho từng thẻ a */
+    display: block;
+    border-radius: 5px;
+}
 
+#page > div:hover > a{
+    color: rgb(0, 244, 28);
+    background-color: rgb(235, 245, 224);
+} 
+#north{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(42, 41, 59);
+    display: flex;
+    color: white;
+}
+
+#north #left{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.about div,
+.help div,
+.concact div{
+    margin-top: 30px;
+}
+
+.about a,
+.help a{
+   text-decoration: none;
+   color: white;
+}
+
+#north #right{
+    width: 50%;
+}
+
+#right input{
+    margin-top: 30px; 
+    padding: 10px;
+    color: white;
+    background-color: rgb(42, 41, 59);
+    border-radius: 7px;
+}
+
+#right label input{
+    background-color: rgb(34, 189, 137);
+    margin-left: -15px;
+}

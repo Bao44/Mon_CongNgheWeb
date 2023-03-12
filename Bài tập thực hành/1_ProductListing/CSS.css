@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
 #main{
     width: 1440px;
     margin-left: 45px;
@@ -25,10 +27,36 @@
    color: gray;
 }
 
-.header_search{
+.header_menu div a{
+    text-decoration: none; 
+    line-height: 50px;
+    /* Căn cho độ rộng của hover */
+    padding: 20px 20px;
+    /* Căn chỉnh độ rộng cho từng thẻ a */
+    border-radius: 5px;
+}
+
+.header_menu div:hover a{
+    color: white;
+    background-color: greenyellow;
+}
+
+.header__search {
     display: flex;
-    justify-content: center;
-    width: 30%;
+    align-items: center;
+}
+
+.header__search .header__search-input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.header__search .header__search-input::placeholder,
+#tag .header__search-input::placeholder{
+    opacity: 0.2;
 }
 #txt{
     margin-top: 10px;
@@ -70,7 +98,7 @@
 }
 
 #tag_menu > li > a {
-    color: black;
+    color: rgb(21, 173, 21);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -89,6 +117,35 @@
     background-color: chartreuse;
 }
 
+.tag__search .tag__search-input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+    border-top: solid white;
+    border-right: solid white;
+    border-left: solid white;
+}
+.tag__search .tag__search-input::placeholder,
+#tag .tag__search-input::placeholder{
+    opacity: 0.5;
+}
+.tag__search{
+    display: flex;
+    margin-right: 10%;
+}
+
+.tag__search .sort_by button{
+    padding: 10px 16px;
+    margin-left: 20px;
+    opacity: 1;
+    border: 1px solid white;
+    color: gray;
+    cursor: pointer;
+}
+
+
 #container{
     display: flex;
     justify-content: space-around;
@@ -97,6 +154,7 @@
 .hang1, .hang2, .hang3{
     display: flex;
 }
+
 .hang1 #hang1_div,
 .hang2 #hang1_div,
 .hang3 #hang1_div{
@@ -113,6 +171,7 @@
 #img1{
     margin-right: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 #page{
     width: 100%;
@@ -133,7 +192,12 @@
     border-radius: 5px;
 }
 
-#page > div:hover > a{
+#page > img:hover{
+    cursor: pointer;
+}
+
+#page > div:hover > a,
+#page > img:hover{
     color: rgb(0, 244, 28);
     background-color: rgb(235, 245, 224);
 } 
@@ -168,15 +232,33 @@
     width: 50%;
 }
 
-#right input{
+#right .litter{
     margin-top: 30px; 
     padding: 10px;
     color: white;
-    background-color: rgb(42, 41, 59);
-    border-radius: 7px;
+    background-color: rgb(42, 41, 59); 
+    border: 1px solid white;
+    border-top-left-radius:8px ;
+    border-bottom-left-radius:8px ;
+}
+#right .submit{
+    padding: 11px;
+    margin-left: -6px;
+    border: 1px solid rgb(42, 41, 59);
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#right input,
+#right input::placeholder{
+    color: white;
 }
 
 #right label input{
     background-color: rgb(34, 189, 137);
-    margin-left: -15px;
+}
+
+#right .end{
+    margin-top: 30px;
 }

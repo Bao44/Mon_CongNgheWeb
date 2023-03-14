@@ -54,6 +54,7 @@
     outline: none;
 }
 
+/* Chữ nhạt */
 .header__search .header__search-input::placeholder,
 #tag .header__search-input::placeholder{
     opacity: 0.2;

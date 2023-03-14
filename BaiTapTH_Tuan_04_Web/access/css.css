@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+.left_top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 32px;
+    margin-top: 50px;
+}
+
+#setting {
+    margin-top: 36px;
+}

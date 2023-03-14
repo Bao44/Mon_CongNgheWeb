@@ -1,22 +1,37 @@
-.main {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
     display: flex;
     justify-content: center;
 }
 
-#wrapper {
+#container {
     display: flex;
     justify-content: space-between;
     width: 1440px;
 }
 
-.left_top {
+#left {
+    width: 90px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left_above {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -30px;
 }
 
-.left_bottom {
+#below {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,4 +45,87 @@
 
 #setting {
     margin-top: 36px;
+}
+
+#center {
+    width: 900px;
+    margin-left: 20px;
+}
+
+#center .title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.title .meeting_title {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.title .redcore {
+    border: 1px solid red;
+    color: red;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.internal_sep {
+    display: flex;
+}
+
+.internal_sep .internal {
+    background-color: rgb(255, 20, 20);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.internal_sep .sep,
+.internal_sep .time {
+    padding: 7px 10px;
+    margin-left: 10px;
+}
+
+.internal_sep .line {
+    margin-left: 10px;
+    padding: 7px 10px;
+    color: gray;
+}
+
+.img #img_big {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.img #img_big img {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.img #img_small img {
+    border-radius: 8px;
+}
+
+#right {
+    width: 440px;
+    margin-left: 50px;
+}
+#right .right_top{
+    border-left: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.right_top .meeting_title {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.right_top .meeting_title a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
 }

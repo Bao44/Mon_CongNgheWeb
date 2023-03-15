@@ -35,6 +35,14 @@
     margin-top: -30px;
 }
 
+#left_above div a:hover{
+    background-color: rgb(212, 228, 243);
+    padding: 0 15px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
 #below {
     display: flex;
     flex-direction: column;
@@ -45,10 +53,12 @@
 .item {
     width: 32px;
     margin-top: 50px;
+    
 }
 
 #setting {
     margin-top: 36px;
+    cursor: pointer;
 }
 
 #center {
@@ -76,6 +86,7 @@
 
 .internal_sep {
     display: flex;
+    margin-top: 30px;
 }
 
 .internal_sep .internal {
@@ -99,9 +110,24 @@
 }
 
 .img #img_big {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
+    position: relative;
 }
+
+.img #img_big .div_name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.img #img_big .div_name img{
+    position: absolute;
+    left: 780px;
+    top: -8px;
+}
+
+
 
 .img #img_big img {
     border-bottom-right-radius: 8px;
@@ -111,6 +137,31 @@
 .img #img_small img {
     border-radius: 8px;
 }
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mic, .cam, .loa,
+.end_meeting, .computer,
+.share, .cham{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.end_meeting{
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+.end_meeting p{
+    margin-top: 15px;
+}
+
 
 #right {
     width: 440px;
@@ -145,14 +196,20 @@
 .right_top .meeting_title {
     font-weight: 700;
     font-size: 25px;
+    padding-right: 50px;
 }
 
 .right_top .meeting_title a{
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 5px;
+    background-color: rgb(255, 233, 233);
+    color: red;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
+
 
 .header1 .header11,
 .header2 .header11,

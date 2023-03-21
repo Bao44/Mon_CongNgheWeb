@@ -28,7 +28,12 @@
 }
 
 .header_logo{
-    padding: 15px 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.header_logo:hover{
+    background-color: #ebebeb;
 }
 
 .header_left .header_menu{
@@ -39,7 +44,12 @@
     text-decoration: none;
     color: gray;
     display: flex;
-    padding: 0 20px;
+    padding: 20px 15px;
+}
+
+.header_menu div:hover a{
+    color: rgb(0, 176, 176);
+    border-bottom: 1px solid rgb(0, 176, 176);
 }
 
 .header_right{
@@ -100,6 +110,12 @@
     color: gray;
 }
 
+.review_share .share #i_span2:hover,
+.review_share .share #i_span:hover{
+    cursor: pointer;
+    color: gray;
+}
+
 .share #i_span{
     margin-right: 40px;
 }
@@ -116,5 +132,189 @@
     margin-left: 30px;
 }
 
+#content_text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 500px;
+}
 
+.content_text-left{
+    width: 65%;
+}
+
+.content_text-left b{
+    font-size: 25px;
+}
+
+.content_text-left p{
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(82, 81, 81);
+}
+
+#left-right{
+    margin-top: 40px;
+    display: flex;
+}
+
+.left{
+    line-height: 40px;
+}
+
+.right{
+    margin-left: 40px;
+    line-height: 40px;
+}
+
+.content_text-right{
+    width: 30%;
+    height: 430px;
+    border: 1px solid #ccc;
+}
+
+.border{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content_text-right b{
+    margin-left: 80%;
+    font-size: 35px;
+    color: rgb(42, 226, 226);
+}
+
+.content_text-right .custom-select1,
+.content_text-right .custom-select2,
+.content_text-right .custom-select3{
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.content_text-right .custom-select1 select,
+.content_text-right .custom-select2 select,
+.content_text-right .custom-select3 select{
+    padding: 10px 10px;
+    padding-right: 250px;
+    color: rgb(78, 77, 77);
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.content_text-right .custom-select2 select{
+    padding-right: 265px;
+}
+
+.content_text-right .custom-select3 select{
+    padding-right: 283px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.buy-now{
+    margin-top: 15px;
+    background-color: rgb(42, 226, 226);
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.buy-now a{
+    text-decoration: none;
+    margin-left: 40%;
+    color: white;
+    font-size: 18px;
+}
+
+.buy-now:hover{
+    opacity: 0.7;
+}
+
+.Add_to_cart{
+    margin-top: 15px;
+    border: 1px solid rgb(42, 226, 226);
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.Add_to_cart i{
+    
+    margin-left: 30%;
+    color: rgb(42, 226, 226);
+    font-size: 18px;
+}
+
+.Add_to_cart a{
+    text-decoration: none;
+    color: rgb(42, 226, 226);
+    font-size: 18px;
+}
+
+.Add_to_cart:hover{
+    background-color: #ebebeb;
+}
+
+#reviews{
+    width: 1200px;
+    margin: auto;
+}
+
+.reviews_heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_heading_right{
+    margin-top: 30px;    
+}
+
+.show{
+    margin-top: 40px;
+}
+
+.show a{
+    text-decoration: none;
+    color: gray;
+}
+
+.reviews_member{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_member_1{
+    margin-top: 20px;
+    width: 43%;
+}
+
+.member{
+    display: flex;
+}
+
+.member .name_member{
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.cmt{
+    margin-top: 10px;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.reviews_member_2{
+    margin-top: 20px;
+    width: 50%;
+}
 

@@ -9,7 +9,7 @@
 }
 
 #main{
-    width: 1520px;
+    width: 1510px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -265,7 +265,7 @@
     background-color: #ebebeb;
 }
 
-#reviews{
+#reviews,#reviews_img{
     width: 1200px;
     margin: auto;
 }
@@ -276,16 +276,20 @@
 }
 
 .reviews_heading_right{
-    margin-top: 30px;    
+    margin-top: 40px;    
 }
 
 .show{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .show a{
     text-decoration: none;
     color: gray;
+}
+
+.show a:hover{
+    color: rgb(39, 183, 183);
 }
 
 .reviews_member{
@@ -318,3 +322,143 @@
     width: 50%;
 }
 
+#reviews_img{
+    height: 500px;
+}
+
+.reviews_img_title{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-riview{
+    margin-top: -5px;
+    border-left: 1px solid #cecccc;
+    border-bottom: 1px solid #cecccc;
+    border-right: 1px solid #cecccc;
+    width: 280px;
+    height: 110px;
+    line-height: 30px;
+}
+
+.title-riview p{
+    color: rgb(25, 192, 192);
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.product-title1{
+    padding-top: 15px;
+}
+
+.product-title1,
+.product-title2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title1 b{
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.product-title1 img{
+    margin-right: 20px;
+}
+
+.product-title2 img{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.product-title2 a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: grey;
+}
+
+.product-title2 a:hover{
+    color: rgb(25, 192, 192);
+}
+
+#footer{
+    margin-top: 60px;
+}
+
+.footer-header{
+    text-align: center;
+}
+
+.footer-header-b{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.footer-header input{
+    margin-top: 20px;
+    padding: 8px 9px;
+    padding-right: 110px;
+    outline: none;
+    background-color: #f3f0f0;
+    border: 1px solid #f3f0f0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.footer-header button{
+    margin-top: 20px;
+    padding: 8px 20px;
+    margin-left: -6px;
+    border: 1px solid white;
+    background-color: rgb(25, 192, 192);
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-header button:hover{
+    background-color: rgb(14, 229, 229);
+    transition: 0.5s;
+}
+
+
+.choose{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 800px;
+    margin-top: 100px;
+}
+
+.choose_txt{
+    line-height: 40px;
+}
+
+.choose_txt b{
+    font-size: 25px;
+}
+
+.end{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.end_languages select{
+    padding: 5px 8px;
+    border:1px solid white;
+    outline: none;
+    background-color: #f2eeee;
+    margin-bottom: 10px;
+}
+
+.end_txt{
+    color: gray;
+}
+
+.end_logo img{
+    padding: 0px 5px;
+}

@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-color: #e5e5e5;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10%;
+}
+
+#title{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 136, 0);
+}
+
+#time{
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#button{
+    margin-top: 70px;
+    text-align: center;
+}
+
+#button button{
+    padding: 15px 20px;
+    margin: 0px 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+#start{
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#end{
+    background-color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#reset{
+    background-color: deepskyblue;
+    font-size: 20px;
+    font-weight: 600;
+}
